@@ -1,5 +1,13 @@
+import { title } from "node:process";
+
 export const resolvers ={
     Query :{
-        greeting: () => "Hello World!",
+        job: () => {
+            return {
+              id: 'test-id',
+              title: 'The job',
+              description: "The description",
+            };
+        },
     }
 }
