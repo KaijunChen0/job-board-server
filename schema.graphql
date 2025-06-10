@@ -1,9 +1,10 @@
 type Query{
-    job: Job
+    # in array of object, it can be empty but it must not be null if it's nonempty
+    jobs: [Job!]
 }
 
 type Job{
-    id: ID
-    title: String
+    id: ID!
+    title: String!
     description: String
 }
